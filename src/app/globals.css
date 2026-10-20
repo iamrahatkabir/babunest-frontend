@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/*
+ * Brownmoor is a two-colour brand: near-black on white. Everything else is a
+ * neutral derived from those, so nothing on the page competes with product
+ * photography.
+ *
+ * No dark-mode block on purpose — a storefront should look the same for every
+ * shopper, and inverting a monochrome brand would read as a bug.
+ */
+@theme {
+  --color-ink: #111111;
+  --color-paper: #ffffff;
+
+  /* Neutrals, warm-tinted a touch so large greys don't look cold. */
+  --color-muted: #6b6b6b;
+  --color-faint: #9a9a9a;
+  --color-line: #e5e5e5;
+  --color-wash: #f6f6f6;
+
+  /* Reserved for genuinely urgent signals: sale badges, out-of-stock. */
+  --color-sale: #c0392b;
+
+  /* Count badges. Brighter than --color-sale so a filled cart catches the eye
+     against the monochrome header. */
+  --color-notify: #fa3e3f;
+
+  /* Geist first for Latin; Bengali glyphs fall through to Noto, which is the
+     only face here that has them. */
+  --font-sans: var(--font-geist-sans), var(--font-noto-bengali), ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/*
+ * Small uppercase label used for nav items, buttons and section eyebrows.
+ * Letter-spacing is what keeps this legible at 11–12px.
+ */
+@utility tracked {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Clamp a product title to two lines so cards in a row stay the same height. */
+@utility line-clamp-2-fixed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
