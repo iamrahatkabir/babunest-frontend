@@ -6,7 +6,7 @@
  * ad account's data.
  *
  * The id is read at build time because it is NEXT_PUBLIC_, so changing it on
- * Vercel requires a redeploy, not just a save.
+ * the host requires a rebuild, not just a save.
  */
 
 export const PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID ?? ''

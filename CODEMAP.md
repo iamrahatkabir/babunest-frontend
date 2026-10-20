@@ -14,11 +14,12 @@ a change makes a line untrue (see `CLAUDE.md`).
 - **All navigation is a full page load.** `components/Link.tsx` is a plain `<a>`, plus `window.location.assign`. There is no `next/link`.
 - `next.config.ts`
   - Rewrites `/api/:path*` → `${NEXT_PUBLIC_PAYLOAD_URL}/api/:path*`. Browser cart, coupon and cash-on-delivery calls are same-origin through this proxy.
-  - Images: remotePatterns allow the Payload host `/api/media/**` and `**.public.blob.vercel-storage.com`. `dangerouslyAllowLocalIP` only outside production.
+  - Images: remotePatterns allow only the Payload host `/api/media/**`. `dangerouslyAllowLocalIP` only outside production.
+- Hosting: Railway, auto-detected (no config file). See DEPLOYMENT.md.
 
 ## Commands
 - `npm run dev`: `next dev --port 3001`. Expects the backend on :3000. `.claude/launch.json` "storefront" runs the same.
-- `npm run build`, `npm start` (port 3001), `npm run lint`.
+- `npm run build`, `npm start` (`$PORT`, default 3001), `npm run lint`.
 
 ## Routes
 All are server components. No route uses `revalidate`/`dynamic` segment config; caching is fetch-level `next.revalidate` only.
@@ -216,7 +217,8 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 ## Env vars
 - `NEXT_PUBLIC_PAYLOAD_URL`: effectively required. Default `http://localhost:3000`.
   - Used for server fetches, the `/api` rewrite, image remotePatterns and media URLs.
-  - Read at build time.
+  - Read at build time. Must be the backend's **public** URL, because browsers load images from it.
+  - Pages built while the backend is down render empty until the 60s revalidate.
 - `NEXT_PUBLIC_SITE_URL`: used by the feed only. Default `http://localhost:3001`; trailing slash stripped.
 - `NEXT_PUBLIC_FACEBOOK_PIXEL_ID`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`: optional. Unset disables them. Build-time, so a change needs a rebuild.
 
