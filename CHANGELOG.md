@@ -5,6 +5,32 @@ Every change made to this repository, newest first.
 The rules for writing an entry — when one is needed and what it should say —
 are in [CLAUDE.md](CLAUDE.md).
 
+## 2026-10-20 — Disconnect from Vercel and the Brownmoor database
+
+**What changed:** Deleted `vercel.json` and rewrote `DEPLOYMENT.md` as a
+platform-neutral checklist that covers the database, image storage, env vars,
+first run and the Meta feed. Docs and comments that assumed Vercel no longer
+do.
+
+The local `.env.local` was not changed. It only points at the backend's URL.
+
+**Why:** Babunest is starting fresh as a new shop on a different hosting
+platform, so nothing should point at Brownmoor's Vercel projects or its live
+database.
+
+**Files:** `vercel.json` (deleted), `DEPLOYMENT.md`, `README.md`, `CLAUDE.md`
+
+**Still outstanding:** No new platform or database has been chosen. The Vercel
+Blob adapter (`@payloadcms/storage-vercel-blob`) is still installed. It stays
+inactive while `BLOB_READ_WRITE_TOKEN` is unset, and uploads go to `./media`.
+It should be replaced, probably with the S3 adapter, once the host is known.
+The old Vercel projects and the Neon database still exist and have to be
+removed in those dashboards. The backend will not start until a new
+`DATABASE_URL` is set.
+
+**Verified:** `tsc --noEmit` passes on the backend. The apps were not run,
+since there is no database to run against.
+
 ## 2026-10-20 — Split the monorepo into separate frontend and backend repositories
 
 **What changed:** This app now lives in its own repository, with the app at the
