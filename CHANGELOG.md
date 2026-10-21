@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · search · Teal focus border on the search field
+- **What:** The header search field's active (focus) border is now `border-primary` instead of dark ink.
+- **Why:** The brand owner asked for the primary colour on its active state.
+- **Files:** `src/components/SearchBar.tsx`, `CODEMAP.md`
+- **Status:** verified on / by focusing the field: border rgb(1,172,159). Checkout form fields and the coupon input still focus dark.
+
 ### 2026-10-21 · layout · Use the new BabuNest main logo in the header
 - **What:** The header now shows `public/logo.svg`, the yellow-and-teal BabuNest logo, cropped to the same 1567×392 box as the footer logo with its 2%-opacity stray shape dropped. It renders at 40px tall on mobile and 48px on desktop, up from 20–24px. The old `public/logo.png` is deleted.
 - **Why:** New brand logo. The mark above the wordmark needs more height for the name to stay readable.

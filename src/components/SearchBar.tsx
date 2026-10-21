@@ -114,7 +114,7 @@ export function SearchBar({
   return (
     <div className={`relative ${className}`} ref={wrapper}>
       <form onSubmit={submit}>
-        <div className="flex h-11 items-center rounded-lg border border-line bg-paper focus-within:border-ink">
+        <div className="flex h-11 items-center rounded-lg border border-line bg-paper focus-within:border-primary">
           <input
             aria-label="Search products"
             autoFocus={autoFocus}
