@@ -321,7 +321,7 @@ export function CheckoutView() {
       <div className="mx-auto max-w-[1280px] px-4 py-16 text-center md:py-24">
         <p className="text-sm text-muted">Your cart is empty, so there is nothing to check out.</p>
         <Link
-          className="mt-6 inline-flex h-11 items-center justify-center rounded-lg bg-ink px-8 text-[11px] tracked text-paper hover:bg-muted"
+          className="mt-6 inline-flex h-11 items-center justify-center rounded-lg bg-primary px-8 text-[11px] tracked text-paper hover:bg-primary-hover"
           href="/"
         >
           Continue shopping
@@ -517,14 +517,14 @@ export function CheckoutView() {
           )}
 
           {placeOrderButton(
-            'mt-5 hidden h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink text-[11px] tracked text-paper transition-colors hover:bg-muted disabled:opacity-60 md:flex',
+            'mt-5 hidden h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary text-[11px] tracked text-paper transition-colors hover:bg-primary-hover disabled:opacity-60 md:flex',
           )}
         </aside>
       </div>
 
       <StickyAction>
         {placeOrderButton(
-          'flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink text-[11px] tracked text-paper transition-colors hover:bg-muted disabled:opacity-60',
+          'flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary text-[11px] tracked text-paper transition-colors hover:bg-primary-hover disabled:opacity-60',
         )}
       </StickyAction>
     </div>

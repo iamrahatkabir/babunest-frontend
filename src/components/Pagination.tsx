@@ -59,7 +59,7 @@ export function Pagination({
             aria-current={n === page ? 'page' : undefined}
             className={`flex h-10 w-10 items-center justify-center rounded-full text-sm transition-colors ${
               n === page
-                ? 'bg-ink font-medium text-paper'
+                ? 'bg-primary font-medium text-paper'
                 : 'text-muted hover:bg-wash hover:text-ink'
             }`}
             href={href(n)}

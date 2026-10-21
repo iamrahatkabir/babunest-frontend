@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 /*
- * BabuNest is a two-colour brand: near-black on white. Everything else is a
- * neutral derived from those, so nothing on the page competes with product
- * photography.
+ * BabuNest: near-black text on white, with one brand colour (teal) reserved
+ * for buttons. Everything else is a neutral, so nothing on the page competes
+ * with product photography.
  *
  * No dark-mode block on purpose — a storefront should look the same for every
  * shopper, and inverting a monochrome brand would read as a bug.
@@ -11,6 +11,12 @@
 @theme {
   --color-ink: #111111;
   --color-paper: #ffffff;
+
+  /* Brand primary: button fills only (white text). Not for titles or body
+     text. White on #01ac9f is 2.8:1, below WCAG AA for small text; chosen
+     deliberately by the brand owner. */
+  --color-primary: #01ac9f;
+  --color-primary-hover: #01968b;
 
   /* Neutrals, warm-tinted a touch so large greys don't look cold. */
   --color-muted: #6b6b6b;

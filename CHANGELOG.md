@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Make teal #01AC9F the button colour
+- **What:** Added `primary` (#01ac9f) and `primary-hover` (#01968b) tokens. Every primary button and the active pagination page now use a teal fill with white text, and outline buttons fill teal on hover. Titles, text and the dark header, footer and banners are unchanged.
+- **Why:** #01AC9F is BabuNest's primary brand colour, for buttons only.
+- **Files:** `src/app/globals.css`, `src/app/order/[id]/page.tsx`, `src/components/{Pagination,ProductCard,ProductSection}.tsx`, `src/components/product/ProductBuyBox.tsx`, `src/components/cart/{CartView,CardAddToCart}.tsx`, `src/components/checkout/{CouponField,CheckoutView}.tsx`, `CODEMAP.md`
+- **Status:** verified on /shop: computed fill rgb(1,172,159), white text, h1 still #111. White on teal is 2.8:1 (below WCAG AA); kept as the brand owner asked.
+
 ### 2026-10-21 · layout · Point Instagram to @babunest
 - **What:** The Instagram link and label in `lib/contact.ts` are now `https://www.instagram.com/babunest/` / `@babunest`.
 - **Why:** BabuNest's own Instagram account replaces Brownmoor's.

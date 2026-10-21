@@ -1,5 +1,5 @@
 # Frontend code map
-_Last verified: 2026-10-20_
+_Last verified: 2026-10-21_
 
 Read this instead of the code. Open only the files a task names. Update it when
 a change makes a line untrue (see `CLAUDE.md`).
@@ -203,11 +203,13 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - `ink #111`, `paper #fff`, `muted #6b6b6b`, `faint #9a9a9a`, `line #e5e5e5`, `wash #f6f6f6`.
   - `sale #c0392b`: sale badges, errors and PolicyNotice only.
   - `notify #fa3e3f`: the cart badge.
+  - `primary #01ac9f` / `primary-hover #01968b`: **button fills only**, with white text. Never use them for titles or body text (brand owner's rule). White on primary is 2.8:1, below AA; chosen deliberately.
 - **Utilities:** `tracked` (0.08em uppercase, used on `text-[11px]` labels) and `line-clamp-2-fixed`.
 - **Recurring classes**
   - Container: `mx-auto max-w-[1280px] px-4`. Radius: `rounded-lg`.
-  - Primary button: `h-11/h-12 rounded-lg bg-ink text-[11px] tracked text-paper hover:bg-muted`.
-  - Secondary button: `border border-ink text-ink hover:bg-ink hover:text-paper`.
+  - Primary button: `h-11/h-12 rounded-lg bg-primary text-[11px] tracked text-paper hover:bg-primary-hover`. The active Pagination page uses `bg-primary` too.
+  - Secondary button: `border border-ink text-ink hover:border-primary hover:bg-primary hover:text-paper`.
+  - Dark `bg-ink` panels (header strip, footer, CheckoutSteps banner, hero fallback, sale-free badges) are not buttons and stay ink.
   - Input: `bg-wash border-transparent focus:border-ink` (the `FIELD` const in CheckoutView).
   - Product grid: `grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 md:gap-4`. `md` is the mobile/desktop split.
 - **Hard-coded colours:** WhatsApp `#25D366`; CartView savings pill `#eef7f0` / `#2f6b43`.
