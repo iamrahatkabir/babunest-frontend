@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Baby-care tagline in the footer, meta description and feed
+- **What:** The footer tagline and the site meta description are now "আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু". The Meta feed channel description is now "Baby care products, delivered across Bangladesh."
+- **Why:** BabuNest sells baby care products, not kitchenware.
+- **Files:** `src/components/Footer.tsx`, `src/app/layout.tsx`, `src/lib/feed.ts`, `src/app/shipping/page.tsx`, `CODEMAP.md`
+- **Status:** verified on / (footer text and meta description in the HTML). The shipping page sign-off also changed from kitchen to baby wording. The backend's demo seed data is still kitchenware.
+
 ### 2026-10-21 · layout · Enlarge the header cart icon and count badge to 24px
 - **What:** The header cart icon went from the 20px default to 24px (`h-6 w-6`). The count badge went from 16px to a 24px circle (`h-6 min-w-6`) with 12px semibold text, nudged out to the corner (`-right-1 -top-1`) so it doesn't cover the icon.
 - **Why:** The brand owner asked for a 24px cart icon and badge.

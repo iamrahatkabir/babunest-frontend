@@ -257,7 +257,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - Logos are BabuNest's, both SVG with the viewBox cropped to 1567×392, rendered through next/image with `unoptimized`.
     - Header: `/logo.svg` (yellow #FDBB01 + teal), h-10/md:h-12.
     - Footer: `/logo-light.svg` (white), h-11/md:h-12.
-  - "Kitchenware" positioning: layout.tsx:35 description, Footer.tsx:34 tagline, feed.ts:380, shipping/page.tsx:226.
+  - Tagline "আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু" (baby care) is the footer tagline and the site meta description. The feed description is "Baby care products, delivered across Bangladesh." The shipping page sign-off is baby-themed too. Demo seed data (seed/data.ts) is still kitchenware.
   - Policy pages give a street address (Arshinagar, Bosila, Mohammadpur): contact, privacy, returns, shipping `page.tsx`.
   - localStorage keys `brownmoor-*` (above): internal only, never shown.
   - Support hours are repeated inline on the policy pages. Effective dates: privacy/page.tsx:20, returns/page.tsx:20.

@@ -377,7 +377,7 @@ export const buildMetaFeed = async (): Promise<{ itemCount: number; xml: string 
     '  <channel>',
     `    <title>${escapeXML(`${BRAND}.com`)}</title>`,
     `    <link>${escapeXML(SITE_URL)}</link>`,
-    `    <description>${escapeXML('Kitchenware, delivered across Bangladesh.')}</description>`,
+    `    <description>${escapeXML('Baby care products, delivered across Bangladesh.')}</description>`,
     ...items.map(renderItem),
     '  </channel>',
     '</rss>',

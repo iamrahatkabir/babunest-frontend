@@ -223,7 +223,7 @@ export default function ShippingPage() {
       </div>
 
       <p className="mt-10 border-t border-line pt-8 text-center text-[15px] leading-[1.9] text-muted md:mt-12 md:text-base">
-        BabuNest.com — সুন্দর রান্নাঘরের জন্য যত্নসহকারে বাছাই করা পণ্য, আপনার দরজায়।
+        BabuNest.com — আপনার ছোট্ট বাবুর জন্য যত্নসহকারে বাছাই করা পণ্য, আপনার দরজায়।
       </p>
     </div>
   )

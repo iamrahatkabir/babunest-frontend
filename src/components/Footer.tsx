@@ -30,8 +30,8 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
               unoptimized
               width={1567}
             />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/85">
-              Kitchenware built to be used every day — and to last long enough to be worth it.
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/85" lang="bn">
+              আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু
             </p>
           </div>
 

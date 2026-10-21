@@ -32,7 +32,7 @@ const notoBengali = Noto_Sans_Bengali({
 
 export const metadata: Metadata = {
   description:
-    'দেশের সেরা কিচেনওয়ার ব্র্যান্ড এ পাচ্ছেন অসাধারণ ডিল এ অথেন্টিক প্রোডাক্ট',
+    'আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু',
   title: {
     default: 'BabuNest.com',
     template: '%s | BabuNest.com',
