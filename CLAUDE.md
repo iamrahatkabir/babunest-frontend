@@ -4,8 +4,6 @@
 
 Next.js 16 shop that reads everything from the Payload backend over HTTP. Its sister repo `babunest-backend` is the Payload backend.
 
-**Open issue:** the storefront is live but empty while the backend deploy is blocked. Read `CURRENT-BOTTLENECK.md` first.
-
 ## Answering the user
 
 Keep replies short: the result, plus anything they must know or do. No recaps

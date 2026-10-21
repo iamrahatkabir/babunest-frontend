@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · config · Backend is live; storefront no longer blocked
+- **What:** Deleted `CURRENT-BOTTLENECK.md` and the Open issue line in `CLAUDE.md`.
+- **Why:** The backend's Railway deploy now works (its tables are created on start), so the storefront can load data.
+- **Files:** `CURRENT-BOTTLENECK.md` (deleted), `CLAUDE.md`
+- **Status:** the storefront returns 200. Products only show once they're added in the admin. Cart and checkout aren't tested on Railway yet; see DEPLOYMENT.md steps 6–7.
+
 ### 2026-10-21 · docs · Record that the storefront is waiting on the backend
 - **What:** Added `CURRENT-BOTTLENECK.md` (the storefront is live on Railway but empty while the backend build fails), with the steps to take once the backend is up. `CLAUDE.md` now has an Open issue line pointing to it.
 - **Why:** Keeps both repos' blocker files in step, so this repo's state doesn't look healthy when it isn't.
