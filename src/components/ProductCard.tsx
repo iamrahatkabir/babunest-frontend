@@ -24,7 +24,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
   const href = `/product/${product.slug}`
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-lg border border-line bg-paper transition-colors hover:border-ink">
+    <article className="group flex flex-col overflow-hidden rounded-lg border border-line bg-paper transition-colors hover:border-primary">
       <div className="relative aspect-square overflow-hidden bg-wash">
         {price.discountPercent !== null && (
           <span className="absolute left-2 top-2 z-10 rounded-lg bg-sale px-1.5 py-0.5 text-[10px] font-semibold text-paper">
@@ -94,7 +94,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
         {soldOut || needsOptions ? (
           <Link
             aria-disabled={soldOut}
-            className={`flex h-9 items-center justify-center rounded-lg text-[11px] tracked font-semibold transition-colors md:h-10 ${
+            className={`flex h-9 items-center justify-center rounded-lg text-[11px] tracked font-bold transition-colors md:h-10 ${
               soldOut
                 ? 'pointer-events-none bg-wash text-faint'
                 : 'bg-primary text-paper hover:bg-primary-hover'

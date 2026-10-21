@@ -33,7 +33,7 @@ export function Pagination({
   )
 
   const arrow =
-    'flex h-10 items-center gap-1.5 rounded-lg border border-line px-3.5 text-[11px] tracked font-semibold transition-colors'
+    'flex h-10 items-center gap-1.5 rounded-lg border border-line px-3.5 text-[11px] tracked font-bold transition-colors'
 
   return (
     <nav aria-label="Pagination" className="mt-10 flex items-center justify-center gap-1.5 md:gap-2">

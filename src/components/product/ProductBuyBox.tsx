@@ -96,7 +96,7 @@ export function ProductBuyBox({ product }: { product: Product }) {
 
   const addButton = (
     <button
-      className="h-12 w-full rounded-lg bg-primary text-[11px] tracked font-semibold text-paper transition-colors hover:bg-primary-hover disabled:bg-wash disabled:text-faint"
+      className="h-12 w-full rounded-lg bg-primary text-[11px] tracked font-bold text-paper transition-colors hover:bg-primary-hover disabled:bg-wash disabled:text-faint"
       disabled={soldOut || isPending}
       onClick={async () => {
         setBusy('add')
@@ -186,7 +186,7 @@ export function ProductBuyBox({ product }: { product: Product }) {
               order with no shipping decision. */}
           {!inCart && !soldOut && (
             <button
-              className="flex h-12 w-full items-center justify-center rounded-lg border border-primary text-[11px] tracked font-semibold text-primary transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
+              className="flex h-12 w-full items-center justify-center rounded-lg border border-primary text-[11px] tracked font-bold text-primary transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
               disabled={isPending}
               onClick={async () => {
                 setBusy('buy')

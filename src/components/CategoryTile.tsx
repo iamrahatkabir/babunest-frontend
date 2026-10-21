@@ -28,7 +28,7 @@ export function CategoryTile({
 
   return (
     <Link className="group block text-center" href={href}>
-      <div className="relative aspect-square overflow-hidden rounded-lg border border-line bg-wash transition-colors group-hover:border-ink">
+      <div className="relative aspect-square overflow-hidden rounded-lg border border-line bg-wash transition-colors group-hover:border-primary">
         {src ? (
           <>
             <Image

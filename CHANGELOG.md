@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Bold button text and a teal card hover border
+- **What:** Button text went from `font-semibold` to `font-bold` everywhere. Product cards and category tiles now show a teal `border-primary` on hover instead of a dark one.
+- **Why:** The brand owner asked for bold buttons and brand-coloured hover borders.
+- **Files:** the same button files as the semibold entry, `src/components/ProductCard.tsx`, `src/components/CategoryTile.tsx`, `CODEMAP.md`
+- **Status:** verified on /shop: button weight 700 and a teal card border on hover (computed). `tsc` passes.
+
 ### 2026-10-21 · layout · Make all button text semibold
 - **What:** Added `font-semibold` to every button's text: primary, secondary outline, card add-to-cart, pagination arrows, the hero CTA and the contact page's WhatsApp button.
 - **Why:** The brand owner asked for semibold button text.

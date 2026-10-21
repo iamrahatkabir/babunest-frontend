@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 function WhatsAppButton() {
   return (
     <a
-      className="flex h-12 w-full items-center justify-center gap-2.5 rounded-lg bg-[#25D366] px-6 text-[11px] tracked font-semibold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:w-auto"
+      className="flex h-12 w-full items-center justify-center gap-2.5 rounded-lg bg-[#25D366] px-6 text-[11px] tracked font-bold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink sm:w-auto"
       href={CONTACT.whatsapp.url}
       rel="noopener noreferrer"
       target="_blank"
