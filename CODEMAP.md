@@ -257,6 +257,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - Logos are BabuNest's, both SVG with the viewBox cropped to 1567×392, rendered through next/image with `unoptimized`.
     - Header: `/logo.svg` (yellow #FDBB01 + teal), h-10/md:h-12.
     - Footer: `/logo-light.svg` (white), h-11/md:h-12.
+  - Icons (Next file conventions in `src/app/`): `icon.svg` (BabuNest nest mark on white, 940²), plus `favicon.ico` (16/32/48 PNG-in-ICO) and `apple-icon.png` (180²), both rendered from icon.svg with sharp. Regenerate both whenever icon.svg changes.
   - Tagline "আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু" (baby care) is the footer tagline and the site meta description. The feed description is "Baby care products, delivered across Bangladesh." The shipping page sign-off is baby-themed too. Demo seed data (seed/data.ts) is still kitchenware.
   - Policy pages give a street address (Arshinagar, Bosila, Mohammadpur): contact, privacy, returns, shipping `page.tsx`.
   - localStorage keys `brownmoor-*` (above): internal only, never shown.

@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Replace the favicon and iPhone icon with BabuNest's
+- **What:** `src/app/icon.svg` is now the BabuNest nest mark. `favicon.ico` (16/32/48px) and `apple-icon.png` (180px) were rendered from it with sharp, replacing the Brownmoor ones.
+- **Why:** New brand icon. The old `.ico` and Apple icon would otherwise keep showing Brownmoor in browsers that prefer them over the SVG.
+- **Files:** `src/app/icon.svg`, `src/app/favicon.ico`, `src/app/apple-icon.png`, `CODEMAP.md`
+- **Status:** verified: all three are served (200) and linked in the page head, and the apple icon was checked visually. The Payload admin's own favicon is unchanged.
+
 ### 2026-10-21 · layout · Baby-care tagline in the footer, meta description and feed
 - **What:** The footer tagline and the site meta description are now "আপনার ছোট্ট বাবুর যত্নের জন্য সবকিছু". The Meta feed channel description is now "Baby care products, delivered across Bangladesh."
 - **Why:** BabuNest sells baby care products, not kitchenware.
