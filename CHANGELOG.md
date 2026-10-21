@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · product · Teal selected state for variant options
+- **What:** The selected variant option on the product page now has a teal border on a light-teal background (`primary-wash` #e6f7f5, a new token) instead of a dark border on grey. Unselected options hover to a teal border.
+- **Why:** The brand owner asked for the primary colour on selected states.
+- **Files:** `src/components/product/ProductBuyBox.tsx`, `src/app/globals.css`, `CODEMAP.md`
+- **Status:** verified on a product with variants (computed styles). `tsc` passes.
+
 ### 2026-10-21 · layout · Bold button text and a teal card hover border
 - **What:** Button text went from `font-semibold` to `font-bold` everywhere. Product cards and category tiles now show a teal `border-primary` on hover instead of a dark one.
 - **Why:** The brand owner asked for bold buttons and brand-coloured hover borders.

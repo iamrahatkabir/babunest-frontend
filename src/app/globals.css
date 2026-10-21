@@ -17,6 +17,8 @@
      deliberately by the brand owner. */
   --color-primary: #01ac9f;
   --color-primary-hover: #01968b;
+  /* Light tint of primary, for selected states (e.g. the chosen variant). */
+  --color-primary-wash: #e6f7f5;
 
   /* Neutrals, warm-tinted a touch so large greys don't look cold. */
   --color-muted: #6b6b6b;

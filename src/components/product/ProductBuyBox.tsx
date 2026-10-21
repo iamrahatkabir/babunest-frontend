@@ -156,7 +156,7 @@ export function ProductBuyBox({ product }: { product: Product }) {
                   <button
                     aria-pressed={active}
                     className={`flex flex-col items-start rounded-lg border px-3 py-2.5 text-left transition-colors ${
-                      active ? 'border-ink bg-wash' : 'border-line hover:border-muted'
+                      active ? 'border-primary bg-primary-wash' : 'border-line hover:border-primary'
                     } ${out ? 'opacity-45' : ''}`}
                     key={variant.id}
                     onClick={() => setVariantId(variant.id)}

@@ -209,6 +209,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - Container: `mx-auto max-w-[1280px] px-4`. Radius: `rounded-lg`.
   - **All buttons** use `text-[11px] tracked font-bold`.
   - Product cards and category tiles get `border-primary` on hover.
+  - Selected state (ProductBuyBox variant option): `border-primary bg-primary-wash` (#e6f7f5). Unselected options hover to `border-primary`.
   - Primary button: `h-11/h-12 rounded-lg bg-primary text-[11px] tracked font-bold text-paper hover:bg-primary-hover`. The active Pagination page uses `bg-primary` too.
   - Secondary (outline) button: `border border-primary text-primary hover:bg-primary hover:text-paper`. Used on the order page, ProductSection view-all, Coupon Apply and ProductBuyBox Buy now.
   - The header utility strip and the footer are `bg-primary` too (footer text uses paper/80–90 so it stays legible on teal). The CheckoutSteps banner, hero fallback panel and ProductCard badge stay `bg-ink`.
