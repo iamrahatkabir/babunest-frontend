@@ -229,7 +229,7 @@ export function CheckoutView() {
         // makes it optional — cash on delivery is arranged by phone. Fall back
         // to a placeholder derived from the number so the order still carries a
         // unique, traceable identifier.
-        customerEmail: form.email.trim() || `${phone}@cod.brownmoor.invalid`,
+        customerEmail: form.email.trim() || `${phone}@cod.babunest.invalid`,
         note: form.note.trim() || undefined,
         secret,
         shippingAddress: address,

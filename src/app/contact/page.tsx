@@ -6,7 +6,7 @@ import { CONTACT } from '@/lib/contact'
 
 export const metadata: Metadata = {
   description:
-    'Brownmoor.com-এর সঙ্গে যোগাযোগ করুন — অর্ডার, ডেলিভারি, Return বা Warranty সংক্রান্ত যেকোনো প্রশ্নে ফোন, WhatsApp বা email-এ আমরা পাশে আছি।',
+    'BabuNest.com-এর সঙ্গে যোগাযোগ করুন — অর্ডার, ডেলিভারি, Return বা Warranty সংক্রান্ত যেকোনো প্রশ্নে ফোন, WhatsApp বা email-এ আমরা পাশে আছি।',
   title: 'যোগাযোগ করুন',
 }
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
           <div className="mt-6">
             <PolicyBody>
               <p>
-                Brownmoor.com-এ আপনার shopping experience আরও সুন্দর ও সহজ করে তুলতে আমরা সবসময়
+                BabuNest.com-এ আপনার shopping experience আরও সুন্দর ও সহজ করে তুলতে আমরা সবসময়
                 পাশে আছি।
               </p>
               <p>
@@ -100,7 +100,7 @@ export default function ContactPage() {
 
       <PolicySection title="আমাদের ঠিকানা">
         <div className="rounded-lg bg-wash p-5 md:p-6">
-          <p className="text-base font-semibold text-ink">Brownmoor.com</p>
+          <p className="text-base font-semibold text-ink">BabuNest.com</p>
           <p className="mt-1 text-[15px] leading-[1.9]">
             Arshinagar, Bosila
             <br />
@@ -124,7 +124,7 @@ export default function ContactPage() {
         <div className="mt-4">
           <PolicyBody>
             <p>
-              Brownmoor.com-এর সঙ্গে কেনাকাটার অভিজ্ঞতা যেন সহজ, নির্ভরযোগ্য এবং আনন্দদায়ক
+              BabuNest.com-এর সঙ্গে কেনাকাটার অভিজ্ঞতা যেন সহজ, নির্ভরযোগ্য এবং আনন্দদায়ক
               হয়—সেটাই আমাদের লক্ষ্য।
             </p>
           </PolicyBody>

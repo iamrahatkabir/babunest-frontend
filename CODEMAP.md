@@ -27,7 +27,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 - **Root `layout.tsx`**
   - Calls `getCategoryTree()` once.
   - Renders `CartProvider` > Header / main / Footer, plus FloatingWhatsApp, FacebookPixel and GoogleAnalytics.
-  - Title template `%s | Brownmoor.com`.
+  - Title template `%s | BabuNest.com`.
 - **`/`** (`app/page.tsx`)
   - `getHomePage()` (depth 2), then `getProducts({ids})` per section in parallel.
   - Renders Hero → TopCollections → ProductSection[]. Only the first section gets `priority`.
@@ -171,7 +171,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
    1. `POST /api/payments/cod/initiate`
       - Body: `{billingAddress, shippingAddress, cartID, couponCode?, customerEmail, note?, secret}`. Must return `reference`.
       - Address: `{addressLine1, city:'Dhaka'|'Outside Dhaka', country:'BD', firstName, phone}`. The backend derives the zone from `city`.
-      - Email fallback: `${phone}@cod.brownmoor.invalid`.
+      - Email fallback: `${phone}@cod.babunest.invalid`.
    2. `POST /api/payments/cod/confirm-order`
       - Body: `{cartID, customerEmail, reference, secret}`. Must return `orderID`.
    3. On success:
@@ -196,7 +196,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - On sale: `price`=compare-at, `sale_price`=live price.
   - `g:product_type`: one per category, max 5.
   - Description: shortDescription, else the Lexical text, else the title.
-  - Brand is the constant `'Brownmoor'`. Links use `NEXT_PUBLIC_SITE_URL`.
+  - Brand is the constant `'BabuNest'`. Links use `NEXT_PUBLIC_SITE_URL`.
 
 ## Styling & UI conventions
 - **Tokens** (`globals.css` @theme), with no dark mode on purpose:
@@ -246,13 +246,10 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 - **Stale comments**
   - ProductBuyBox.tsx:184-186 and CheckoutView.tsx:116 say the zone is picked on the cart page; it is picked at checkout.
   - MobileNav.tsx:13 says it is the only client component in the header; SearchBar, MobileSearch and CartCount are client components too.
-- **Brownmoor brand still hard-coded** (needs rebranding to Babunest):
-  - `lib/contact.ts:15-37`: phone 8801621193887, Facebook, email, Instagram. WhatsApp and hotline share the phone.
-  - layout.tsx:35-38: title, template and the "kitchenware brand" description.
-  - Header.tsx:73, Footer.tsx:26: logo alt. The logo files are `/logo.png` and `/logo-light.svg`.
-  - Footer.tsx:34 (tagline), :125 (©).
-  - Hero.tsx:30, 53: alt fallbacks.
-  - feed.ts:29, 378, 380: brand, channel title and description.
-  - globals.css:4: comment.
-  - Policy pages name Brownmoor.com and a street address (Arshinagar, Bosila, Mohammadpur) throughout: contact, privacy, returns, shipping `page.tsx`.
+- **Brand:** site name is `BabuNest.com` everywhere (titles, policy pages, footer ©, logo alt, Hero alt fallbacks, feed). Facebook: `facebook.com/babunestbangladesh` (lib/contact.ts). Still left from Brownmoor:
+  - `lib/contact.ts`: phone 8801621193887 (WhatsApp and hotline share it), email `hellobrownmoor@gmail.com`, Instagram `@brownmoorbd`.
+  - Logo files `/logo.png`, `/logo-light.svg`. Colours and tokens in globals.css.
+  - "Kitchenware" positioning: layout.tsx:35 description, Footer.tsx:34 tagline, feed.ts:380, shipping/page.tsx:226.
+  - Policy pages give a street address (Arshinagar, Bosila, Mohammadpur): contact, privacy, returns, shipping `page.tsx`.
+  - localStorage keys `brownmoor-*` (above): internal only, never shown.
   - Support hours are repeated inline on the policy pages. Effective dates: privacy/page.tsx:20, returns/page.tsx:20.

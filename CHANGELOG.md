@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · docs · Rename the brand from Brownmoor.com to BabuNest.com
+- **What:** Every visible "Brownmoor.com" / "Brownmoor" is now "BabuNest.com" / "BabuNest". The Facebook link now points to `facebook.com/babunestbangladesh` (label BabuNest.com), and the placeholder order email is `@cod.babunest.invalid`.
+- **Why:** The shop is relaunching as BabuNest.
+- **Files:** `src/lib/contact.ts`, `src/app/layout.tsx`, `src/app/{contact,privacy,returns,shipping}/page.tsx`, `src/components/{Header,Footer,Hero}.tsx`, `src/components/checkout/CheckoutView.tsx`, `src/lib/feed.ts`, `src/app/globals.css`, `CODEMAP.md`
+- **Status:** verified: `tsc` passes and the home and four policy pages render with 0 "Brownmoor" and the new Facebook link. Phone, email, Instagram, logo, the 'kitchenware' copy and the `brownmoor-*` localStorage keys are unchanged.
+
 ### 2026-10-20 · config · Prepare the storefront for Railway hosting
 - **What:** `npm start` now listens on `$PORT` (default 3001). Removed the Vercel Blob image host from `next.config.ts`. `DEPLOYMENT.md` now covers Railway.
 - **Why:** Railway hosts both apps; images are served by the backend from its volume.

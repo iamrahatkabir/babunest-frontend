@@ -19,8 +19,8 @@ const PHONE = {
 export const CONTACT = {
   facebook: {
     /** Shown next to the mark. */
-    label: 'Brownmoor.com',
-    url: 'https://www.facebook.com/brownmoorbangladesh/',
+    label: 'BabuNest.com',
+    url: 'https://www.facebook.com/babunestbangladesh/',
   },
   email: {
     address: 'hellobrownmoor@gmail.com',

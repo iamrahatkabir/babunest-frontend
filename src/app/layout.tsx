@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   description:
     'দেশের সেরা কিচেনওয়ার ব্র্যান্ড এ পাচ্ছেন অসাধারণ ডিল এ অথেন্টিক প্রোডাক্ট',
   title: {
-    default: 'Brownmoor.com',
-    template: '%s | Brownmoor.com',
+    default: 'BabuNest.com',
+    template: '%s | BabuNest.com',
   },
 }
 

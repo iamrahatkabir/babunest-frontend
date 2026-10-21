@@ -13,7 +13,7 @@ import { CONTACT } from '@/lib/contact'
 
 export const metadata: Metadata = {
   description:
-    'Brownmoor.com-এর Return, Replacement, Exchange, Refund এবং Warranty সংক্রান্ত নীতিমালা। পণ্য গ্রহণের সময় কী দেখতে হবে এবং কীভাবে request করবেন।',
+    'BabuNest.com-এর Return, Replacement, Exchange, Refund এবং Warranty সংক্রান্ত নীতিমালা। পণ্য গ্রহণের সময় কী দেখতে হবে এবং কীভাবে request করবেন।',
   title: 'Returns & Warranty Policy',
 }
 
@@ -51,7 +51,7 @@ export default function ReturnsPage() {
           <div className="mt-6">
             <PolicyBody>
               <p>
-                Brownmoor.com-এ আমরা চাই আপনি আপনার কেনাকাটায় সম্পূর্ণ সন্তুষ্ট থাকুন। পণ্য হাতে
+                BabuNest.com-এ আমরা চাই আপনি আপনার কেনাকাটায় সম্পূর্ণ সন্তুষ্ট থাকুন। পণ্য হাতে
                 পাওয়ার পর কোনো সমস্যা থাকলে আমাদের Returns &amp; Warranty Policy অনুযায়ী আমরা
                 Return, Replacement অথবা Exchange-এর ব্যবস্থা করে থাকি।
               </p>
@@ -65,7 +65,7 @@ export default function ReturnsPage() {
       title="Returns & Warranty Policy"
     >
       <PolicySection title="Return করার ক্ষেত্রে প্রযোজ্য কারণ">
-        <p>নিচের যেকোনো কারণে আপনি Brownmoor.com-এ Return request করতে পারবেন:</p>
+        <p>নিচের যেকোনো কারণে আপনি BabuNest.com-এ Return request করতে পারবেন:</p>
         <PolicyList
           items={[
             'পণ্য damaged অবস্থায় পৌঁছালে',
@@ -130,7 +130,7 @@ export default function ReturnsPage() {
           <Strong>Return delivery charge customer-কে বহন করতে হবে</Strong>।
         </p>
         <p>
-          Return request অনুমোদিত হওয়ার পর পণ্যটি Brownmoor.com-এ ফেরত পাঠানোর জন্য প্রযোজ্য
+          Return request অনুমোদিত হওয়ার পর পণ্যটি BabuNest.com-এ ফেরত পাঠানোর জন্য প্রযোজ্য
           delivery charge customer-এর দায়িত্বে থাকবে।
         </p>
       </PolicySection>
@@ -161,7 +161,7 @@ export default function ReturnsPage() {
       </PolicySection>
 
       <PolicySection title="Warranty Policy">
-        <p>Brownmoor.com-এর সব পণ্যে warranty প্রযোজ্য নয়।</p>
+        <p>BabuNest.com-এর সব পণ্যে warranty প্রযোজ্য নয়।</p>
         <p>
           যে সকল পণ্যে warranty রয়েছে, সেই warranty-এর সময়কাল ও শর্ত সংশ্লিষ্ট product
           description-এ স্পষ্টভাবে উল্লেখ করা থাকবে।
@@ -261,7 +261,7 @@ export default function ReturnsPage() {
 
       <PolicySection title="একটি গুরুত্বপূর্ণ অনুরোধ">
         <p>
-          Brownmoor.com থেকে আপনার অর্ডার গ্রহণ করার সময় কয়েক মুহূর্ত সময় নিয়ে পণ্যটি delivery
+          BabuNest.com থেকে আপনার অর্ডার গ্রহণ করার সময় কয়েক মুহূর্ত সময় নিয়ে পণ্যটি delivery
           person-এর সামনে পরীক্ষা করুন।
         </p>
         <p>
@@ -273,7 +273,7 @@ export default function ReturnsPage() {
 
       <PolicySection title="আমাদের সঙ্গে যোগাযোগ করুন">
         <div className="rounded-lg bg-wash p-5 md:p-6">
-          <p className="text-base font-semibold text-ink">Brownmoor.com</p>
+          <p className="text-base font-semibold text-ink">BabuNest.com</p>
           <p className="mt-1 text-[15px]">Arshinagar, Bosila, Mohammadpur, Dhaka</p>
 
           <div className="mt-4 space-y-2 text-[15px]">

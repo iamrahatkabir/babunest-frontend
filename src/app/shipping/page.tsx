@@ -5,7 +5,7 @@ import { CONTACT } from '@/lib/contact'
 
 export const metadata: Metadata = {
   description:
-    'Brownmoor.com-এর ডেলিভারি সময়, চার্জ, Cash on Delivery এবং রিটার্ন সংক্রান্ত তথ্য। সারা বাংলাদেশে ডেলিভারি।',
+    'BabuNest.com-এর ডেলিভারি সময়, চার্জ, Cash on Delivery এবং রিটার্ন সংক্রান্ত তথ্য। সারা বাংলাদেশে ডেলিভারি।',
   title: 'শিপিং ও ডেলিভারি',
 }
 
@@ -48,7 +48,7 @@ export default function ShippingPage() {
 
         <div className="mt-6 space-y-4 text-[15px] leading-[1.9] text-muted md:text-base md:leading-[2]">
           <p>
-            Brownmoor.com-এ আমরা বিশ্বাস করি, একটি সুন্দর shopping experience শুধু পণ্য বেছে নেওয়ার
+            BabuNest.com-এ আমরা বিশ্বাস করি, একটি সুন্দর shopping experience শুধু পণ্য বেছে নেওয়ার
             মধ্যেই সীমাবদ্ধ নয়—আপনার অর্ডারটি নিরাপদে ও সময়মতো পৌঁছে দেওয়াও তার একটি গুরুত্বপূর্ণ
             অংশ।
           </p>
@@ -110,7 +110,7 @@ export default function ShippingPage() {
 
         <PolicySection title="Cash on Delivery">
           <p>
-            আপনার সুবিধার কথা মাথায় রেখে Brownmoor.com-এ{' '}
+            আপনার সুবিধার কথা মাথায় রেখে BabuNest.com-এ{' '}
             <Strong>সারা বাংলাদেশে Cash on Delivery</Strong>{' '}
             সুবিধা রয়েছে।
           </p>
@@ -194,7 +194,7 @@ export default function ShippingPage() {
           <p>আপনার অর্ডার, ডেলিভারি বা শিপিং সম্পর্কিত কোনো প্রশ্ন থাকলে আমরা সাহায্য করতে প্রস্তুত।</p>
 
           <div className="rounded-lg bg-wash p-5 md:p-6">
-            <p className="text-base font-semibold text-ink">Brownmoor.com</p>
+            <p className="text-base font-semibold text-ink">BabuNest.com</p>
             <p className="mt-1 text-[15px]">Arshinagar, Bosila, Mohammadpur, Dhaka</p>
 
             <dl className="mt-4 space-y-2 text-[15px]">
@@ -223,7 +223,7 @@ export default function ShippingPage() {
       </div>
 
       <p className="mt-10 border-t border-line pt-8 text-center text-[15px] leading-[1.9] text-muted md:mt-12 md:text-base">
-        Brownmoor.com — সুন্দর রান্নাঘরের জন্য যত্নসহকারে বাছাই করা পণ্য, আপনার দরজায়।
+        BabuNest.com — সুন্দর রান্নাঘরের জন্য যত্নসহকারে বাছাই করা পণ্য, আপনার দরজায়।
       </p>
     </div>
   )

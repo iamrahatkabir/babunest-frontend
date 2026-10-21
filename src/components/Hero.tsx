@@ -27,7 +27,7 @@ export function Hero({ content }: { content: HomePageGlobal | null }) {
     return src
       ? [
           {
-            alt: slide.alt || content?.heading || 'Brownmoor.com',
+            alt: slide.alt || content?.heading || 'BabuNest.com',
             href: slide.link?.trim() || null,
             src,
           },
@@ -50,7 +50,7 @@ export function Hero({ content }: { content: HomePageGlobal | null }) {
       <div className="relative isolate aspect-[12/5] w-full overflow-hidden rounded-lg bg-ink">
         {src && (
           <Image
-            alt={heading || 'Brownmoor.com'}
+            alt={heading || 'BabuNest.com'}
             className="object-cover"
             fill
             // Above the fold, so it should not wait for lazy loading.

@@ -12,7 +12,7 @@ import { CONTACT } from '@/lib/contact'
 
 export const metadata: Metadata = {
   description:
-    'Brownmoor.com কীভাবে আপনার ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষিত রাখে — cookies, analytics, marketing এবং আপনার অধিকার সম্পর্কে বিস্তারিত।',
+    'BabuNest.com কীভাবে আপনার ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষিত রাখে — cookies, analytics, marketing এবং আপনার অধিকার সম্পর্কে বিস্তারিত।',
   title: 'Privacy Policy',
 }
 
@@ -31,13 +31,13 @@ export default function PrivacyPage() {
           <div className="mt-6">
             <PolicyBody>
               <p>
-                Brownmoor.com আপনার ব্যক্তিগত তথ্যের গোপনীয়তা ও নিরাপত্তাকে গুরুত্ব দেয়। আপনি যখন
+                BabuNest.com আপনার ব্যক্তিগত তথ্যের গোপনীয়তা ও নিরাপত্তাকে গুরুত্ব দেয়। আপনি যখন
                 আমাদের website ব্যবহার করেন, অর্ডার করেন বা আমাদের সঙ্গে যোগাযোগ করেন, তখন আপনার
                 দেওয়া তথ্য কীভাবে সংগ্রহ, ব্যবহার ও সুরক্ষিত রাখা হয়—এই Privacy Policy-তে তা
                 বিস্তারিতভাবে ব্যাখ্যা করা হয়েছে।
               </p>
               <p>
-                Brownmoor.com-এর website ব্যবহার বা আমাদের কাছ থেকে পণ্য কেনার মাধ্যমে আপনি এই
+                BabuNest.com-এর website ব্যবহার বা আমাদের কাছ থেকে পণ্য কেনার মাধ্যমে আপনি এই
                 Privacy Policy-তে বর্ণিত practices-এ সম্মতি প্রদান করছেন।
               </p>
             </PolicyBody>
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
     >
       <PolicySection title="আমরা কোন তথ্য সংগ্রহ করি">
         <p>
-          আপনি Brownmoor.com-এ অর্ডার করার সময় বা আমাদের সঙ্গে যোগাযোগ করার সময় আমরা প্রয়োজন
+          আপনি BabuNest.com-এ অর্ডার করার সময় বা আমাদের সঙ্গে যোগাযোগ করার সময় আমরা প্রয়োজন
           অনুযায়ী নিম্নলিখিত তথ্য সংগ্রহ করতে পারি:
         </p>
         <PolicyList
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
 
       <PolicySection title="Cookies ও Analytics">
         <p>
-          Brownmoor.com-এর website-এর performance এবং customer experience বুঝতে আমরা কিছু
+          BabuNest.com-এর website-এর performance এবং customer experience বুঝতে আমরা কিছু
           third-party analytics ও advertising technologies ব্যবহার করি।
         </p>
         <p>এর মধ্যে রয়েছে:</p>
@@ -114,7 +114,7 @@ export default function PrivacyPage() {
       </PolicySection>
 
       <PolicySection title="Marketing Communications">
-        <p>আপনার অনুমতি বা প্রযোজ্য নিয়ম অনুযায়ী আমরা আপনাকে Brownmoor.com-এর:</p>
+        <p>আপনার অনুমতি বা প্রযোজ্য নিয়ম অনুযায়ী আমরা আপনাকে BabuNest.com-এর:</p>
         <PolicyList
           items={[
             'Promotional WhatsApp messages',
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
 
       <PolicySection title="Facebook ও Instagram Retargeting">
         <p>
-          আপনার website interaction-এর ভিত্তিতে Brownmoor.com Facebook ও Instagram-এর মাধ্যমে
+          আপনার website interaction-এর ভিত্তিতে BabuNest.com Facebook ও Instagram-এর মাধ্যমে
           আপনাকে relevant advertisements দেখাতে পারে।
         </p>
         <p>এটি আমাদের website-এ ব্যবহৃত Meta Pixel-এর মাধ্যমে করা হতে পারে।</p>
@@ -150,7 +150,7 @@ export default function PrivacyPage() {
 
       <PolicySection title="আমরা কার সঙ্গে আপনার তথ্য শেয়ার করি">
         <p>
-          Brownmoor.com আপনার personal information{' '}
+          BabuNest.com আপনার personal information{' '}
           <Strong>বিক্রি, ভাড়া বা অপ্রয়োজনীয়ভাবে</Strong> অন্য কোনো ব্যক্তি বা প্রতিষ্ঠানের কাছে
           শেয়ার করে না।
         </p>
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
 
       <PolicySection title="আপনার তথ্যের নিরাপত্তা">
         <p>
-          আপনার ব্যক্তিগত তথ্য সুরক্ষিত রাখতে Brownmoor.com যথাযথ security measures গ্রহণ করে।
+          আপনার ব্যক্তিগত তথ্য সুরক্ষিত রাখতে BabuNest.com যথাযথ security measures গ্রহণ করে।
         </p>
         <p>এর মধ্যে রয়েছে:</p>
         <PolicyList
@@ -207,11 +207,11 @@ export default function PrivacyPage() {
             'আপনার তথ্য কীভাবে ব্যবহার করা হচ্ছে সে সম্পর্কে প্রশ্ন করতে পারেন',
           ]}
         />
-        <p>এসব বিষয়ে অনুরোধ করতে Brownmoor.com-এর সঙ্গে যোগাযোগ করুন।</p>
+        <p>এসব বিষয়ে অনুরোধ করতে BabuNest.com-এর সঙ্গে যোগাযোগ করুন।</p>
       </PolicySection>
 
       <PolicySection title="শিশুদের গোপনীয়তা">
-        <p>Brownmoor.com শিশুদের জন্য তৈরি কোনো website বা service নয়।</p>
+        <p>BabuNest.com শিশুদের জন্য তৈরি কোনো website বা service নয়।</p>
         <p>
           আমরা জেনেশুনে শিশুদের কাছ থেকে ব্যক্তিগত তথ্য সংগ্রহ করার উদ্দেশ্যে আমাদের website
           পরিচালনা করি না।
@@ -225,11 +225,11 @@ export default function PrivacyPage() {
 
       <PolicySection title="Third-Party Websites">
         <p>
-          Brownmoor.com-এর website বা communication-এর মাধ্যমে কখনো কখনো third-party website বা
+          BabuNest.com-এর website বা communication-এর মাধ্যমে কখনো কখনো third-party website বা
           service-এর link থাকতে পারে।
         </p>
         <p>
-          এই third-party websites-এর privacy practices Brownmoor.com-এর নিয়ন্ত্রণের বাইরে। তাই কোনো
+          এই third-party websites-এর privacy practices BabuNest.com-এর নিয়ন্ত্রণের বাইরে। তাই কোনো
           external website ব্যবহার করার আগে তাদের নিজস্ব Privacy Policy পড়ে নেওয়ার পরামর্শ দেওয়া
           হচ্ছে।
         </p>
@@ -237,7 +237,7 @@ export default function PrivacyPage() {
 
       <PolicySection title="Privacy Policy-তে পরিবর্তন">
         <p>
-          সময়ের সঙ্গে আমাদের services, technology বা business practices পরিবর্তন হলে Brownmoor.com
+          সময়ের সঙ্গে আমাদের services, technology বা business practices পরিবর্তন হলে BabuNest.com
           এই Privacy Policy আপডেট করতে পারে।
         </p>
         <p>
@@ -253,11 +253,11 @@ export default function PrivacyPage() {
       <PolicySection title="আমাদের সঙ্গে যোগাযোগ করুন">
         <p>
           আপনার personal information, privacy বা এই Privacy Policy সম্পর্কে কোনো প্রশ্ন, অনুরোধ বা
-          অভিযোগ থাকলে Brownmoor.com-এর সঙ্গে যোগাযোগ করতে পারেন।
+          অভিযোগ থাকলে BabuNest.com-এর সঙ্গে যোগাযোগ করতে পারেন।
         </p>
 
         <div className="rounded-lg bg-wash p-5 md:p-6">
-          <p className="text-base font-semibold text-ink">Brownmoor.com</p>
+          <p className="text-base font-semibold text-ink">BabuNest.com</p>
           <p className="mt-1 text-[15px]">Arshinagar, Bosila, Mohammadpur, Dhaka</p>
 
           <dl className="mt-4 space-y-2 text-[15px]">
@@ -285,7 +285,7 @@ export default function PrivacyPage() {
       </PolicySection>
 
       <p className="border-t border-line pt-8 text-center text-[15px] leading-[1.9] text-muted md:text-base">
-        আপনার privacy এবং আপনার সঙ্গে আমাদের সম্পর্কের বিশ্বাসকে Brownmoor.com গুরুত্ব দেয়।
+        আপনার privacy এবং আপনার সঙ্গে আমাদের সম্পর্কের বিশ্বাসকে BabuNest.com গুরুত্ব দেয়।
       </p>
     </PolicyPage>
   )

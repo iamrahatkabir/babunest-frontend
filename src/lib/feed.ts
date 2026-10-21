@@ -26,7 +26,7 @@ const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL || 'http://localhost:300
  */
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3001').replace(/\/$/, '')
 
-const BRAND = 'Brownmoor'
+const BRAND = 'BabuNest'
 
 /** Meta's ceilings. Exceeding one rejects the item, so text is cut to fit. */
 const MAX_TITLE = 200
