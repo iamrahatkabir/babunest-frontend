@@ -5,11 +5,11 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
-### 2026-10-21 · cart · Make the quantity stepper teal
-- **What:** `QuantityStepper` (the −/count/+ control that replaces Add to cart) is now a teal `bg-primary` fill with white icons and count, plus a `primary-hover` on each button. Before, it was a dark outline.
-- **Why:** It is a button and stands in for the teal Add to cart button, so it should match.
+### 2026-10-21 · cart · Make the quantity stepper outline teal
+- **What:** `QuantityStepper` (the −/count/+ control that replaces Add to cart) stays an outline, now with a teal border and teal −/+ icons instead of dark ones. The count stays dark text.
+- **Why:** Brand colour on the control, kept as an outline (not a filled primary button), as the brand owner asked.
 - **Files:** `src/components/cart/QuantityStepper.tsx`, `CODEMAP.md`
-- **Status:** verified on /shop after adding an item: rgb(1,172,159) with white text. It also changes the stepper on the product page, cart and checkout, which share this component.
+- **Status:** verified on /shop after adding an item (border and icons rgb(1,172,159)). It also changes the stepper on the product page, cart and checkout, which share this component.
 
 ### 2026-10-21 · layout · Use the new BabuNest footer logo
 - **What:** Replaced `public/logo-light.svg` with the white BabuNest logo. Its viewBox is cropped from 1672×940 to the artwork (1567×392), and a 2%-opacity duplicate shape is dropped. The footer now shows it at 44–48px tall, up from 28px.

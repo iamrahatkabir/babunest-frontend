@@ -30,10 +30,10 @@ export function QuantityStepper({
   const atMax = typeof max === 'number' && quantity >= max
 
   return (
-    <div className={`flex items-center justify-between rounded-lg bg-primary text-paper ${className}`}>
+    <div className={`flex items-center justify-between rounded-lg border border-primary ${className}`}>
       <button
         aria-label={quantity <= 1 ? 'Remove from cart' : 'Decrease quantity'}
-        className="flex h-full w-10 items-center justify-center rounded-lg transition-colors hover:bg-primary-hover disabled:opacity-40 disabled:hover:bg-transparent md:w-12"
+        className="flex h-full w-10 items-center justify-center text-primary disabled:opacity-40 md:w-12"
         disabled={disabled}
         onClick={onDecrement}
         type="button"
@@ -49,7 +49,7 @@ export function QuantityStepper({
 
       <button
         aria-label="Increase quantity"
-        className="flex h-full w-10 items-center justify-center rounded-lg transition-colors hover:bg-primary-hover disabled:opacity-40 disabled:hover:bg-transparent md:w-12"
+        className="flex h-full w-10 items-center justify-center text-primary disabled:opacity-40 md:w-12"
         disabled={disabled || atMax}
         onClick={onIncrement}
         type="button"
