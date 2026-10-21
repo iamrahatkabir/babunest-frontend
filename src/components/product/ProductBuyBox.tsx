@@ -186,7 +186,7 @@ export function ProductBuyBox({ product }: { product: Product }) {
               order with no shipping decision. */}
           {!inCart && !soldOut && (
             <button
-              className="flex h-12 w-full items-center justify-center rounded-lg border border-ink text-[11px] tracked text-ink transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
+              className="flex h-12 w-full items-center justify-center rounded-lg border border-primary text-[11px] tracked text-primary transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
               disabled={isPending}
               onClick={async () => {
                 setBusy('buy')

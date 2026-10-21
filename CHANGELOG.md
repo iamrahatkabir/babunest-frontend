@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Make secondary buttons teal outlines
+- **What:** Outline buttons now have a teal border and teal text instead of dark ones; they still fill teal with white text on hover. Covers the order page, the home-section "view all", coupon Apply and the product page's Buy now.
+- **Why:** The brand owner wants secondary buttons to match the teal quantity-stepper outline.
+- **Files:** `src/app/order/[id]/page.tsx`, `src/components/ProductSection.tsx`, `src/components/checkout/CouponField.tsx`, `src/components/product/ProductBuyBox.tsx`, `CODEMAP.md`
+- **Status:** `tsc` passes, and the Buy now computed styles were checked on a product page.
+
 ### 2026-10-21 · cart · Make the quantity stepper outline teal
 - **What:** `QuantityStepper` (the −/count/+ control that replaces Add to cart) stays an outline, now with a teal border and teal −/+ icons instead of dark ones. The count stays dark text.
 - **Why:** Brand colour on the control, kept as an outline (not a filled primary button), as the brand owner asked.

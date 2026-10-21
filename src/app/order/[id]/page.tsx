@@ -56,7 +56,7 @@ export default async function OrderCompletePage({
             Continue shopping
           </Link>
           <a
-            className="flex h-11 w-full items-center justify-center rounded-lg border border-ink px-8 text-[11px] tracked text-ink hover:border-primary hover:bg-primary hover:text-paper sm:w-auto"
+            className="flex h-11 w-full items-center justify-center rounded-lg border border-primary px-8 text-[11px] tracked text-primary hover:border-primary hover:bg-primary hover:text-paper sm:w-auto"
             href={CONTACT.whatsapp.url}
             rel="noopener noreferrer"
             target="_blank"
