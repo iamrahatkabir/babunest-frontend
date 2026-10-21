@@ -96,7 +96,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 - `CartCount` (client): unit count. Falls back to `cartCountCache` until the cart loads.
 - `CartView` (client): rows, subtotal, savings, a checkout link that fires `trackBeginCheckout`, StickyAction.
 - `CardAddToCart` (client): grid add button that becomes a stepper.
-- `QuantityStepper` (client): bin icon at qty 1; respects `max`.
+- `QuantityStepper` (client): teal `bg-primary` with white icons; bin icon at qty 1; respects `max`. Used on cards, the product page, cart and checkout.
 - `useCartLine`: finds the line for a product + variant; optimistic qty; per-control `isPending`; add / increment / decrement (qty 1 removes).
 - `useCartHydrated`: shows the skeleton while localStorage has a cart id and items haven't loaded; gives up after 6s.
 - `cartCountCache`: last count in localStorage. `CartSkeleton`: placeholder.
