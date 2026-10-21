@@ -16,6 +16,7 @@ a change makes a line untrue (see `CLAUDE.md`).
   - Rewrites `/api/:path*` → `${NEXT_PUBLIC_PAYLOAD_URL}/api/:path*`. Browser cart, coupon and cash-on-delivery calls are same-origin through this proxy.
   - Images: remotePatterns allow only the Payload host `/api/media/**`. `dangerouslyAllowLocalIP` only outside production.
 - Hosting: Railway, auto-detected (no config file). See DEPLOYMENT.md.
+- Package manager: **npm only** (`packageManager: npm@10.8.2`). `payload` and `@payloadcms/plugin-ecommerce` are pinned to the backend's exact version (3.88.0).
 
 ## Commands
 - `npm run dev`: `next dev --port 3001`. Expects the backend on :3000. `.claude/launch.json` "storefront" runs the same.

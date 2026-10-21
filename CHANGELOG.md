@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · deps · Force npm on Railway and pin Payload plugin versions
+- **What:** `packageManager` is now `npm@10.8.2` and `@payloadcms/plugin-ecommerce` is pinned to exactly 3.88.0 (was ^3.88.0). Also pinned `payload` to 3.88.0.
+- **Why:** The first Railway build picked pnpm (from `engines.pnpm`), ignored `package-lock.json` and installed plugin-ecommerce 3.91.0 against payload 3.88.0. The build failed with "Export uploadRequiresServerValidation doesn't exist".
+- **Files:** `package.json`, `package-lock.json`, `CODEMAP.md`
+- **Status:** the backend `npm run build` passes locally. Not yet confirmed on Railway.
+
 ### 2026-10-21 · layout · Replace the favicon and iPhone icon with BabuNest's
 - **What:** `src/app/icon.svg` is now the BabuNest nest mark. `favicon.ico` (16/32/48px) and `apple-icon.png` (180px) were rendered from it with sharp, replacing the Brownmoor ones.
 - **Why:** New brand icon. The old `.ico` and Apple icon would otherwise keep showing Brownmoor in browsers that prefer them over the SVG.
