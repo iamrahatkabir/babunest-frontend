@@ -33,8 +33,8 @@ export const CONTACT = {
   },
   instagram: {
     /** The handle, since that is how Instagram accounts are referred to. */
-    label: '@brownmoorbd',
-    url: 'https://www.instagram.com/brownmoorbd/',
+    label: '@babunest',
+    url: 'https://www.instagram.com/babunest/',
   },
   whatsapp: {
     display: PHONE.display,

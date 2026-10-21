@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Point Instagram to @babunest
+- **What:** The Instagram link and label in `lib/contact.ts` are now `https://www.instagram.com/babunest/` / `@babunest`.
+- **Why:** BabuNest's own Instagram account replaces Brownmoor's.
+- **Files:** `src/lib/contact.ts`, `CODEMAP.md`
+- **Status:** verified: the /contact page renders only the new Instagram link.
+
 ### 2026-10-21 · docs · Rename the brand from Brownmoor.com to BabuNest.com
 - **What:** Every visible "Brownmoor.com" / "Brownmoor" is now "BabuNest.com" / "BabuNest". The Facebook link now points to `facebook.com/babunestbangladesh` (label BabuNest.com), and the placeholder order email is `@cod.babunest.invalid`.
 - **Why:** The shop is relaunching as BabuNest.

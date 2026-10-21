@@ -247,7 +247,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - ProductBuyBox.tsx:184-186 and CheckoutView.tsx:116 say the zone is picked on the cart page; it is picked at checkout.
   - MobileNav.tsx:13 says it is the only client component in the header; SearchBar, MobileSearch and CartCount are client components too.
 - **Brand:** site name is `BabuNest.com` everywhere (titles, policy pages, footer ©, logo alt, Hero alt fallbacks, feed). Facebook: `facebook.com/babunestbangladesh` (lib/contact.ts). Still left from Brownmoor:
-  - `lib/contact.ts`: phone 8801621193887 (WhatsApp and hotline share it), email `hellobrownmoor@gmail.com`, Instagram `@brownmoorbd`.
+  - `lib/contact.ts`: phone 8801621193887 (WhatsApp and hotline share it), email `hellobrownmoor@gmail.com`. Instagram is `@babunest`.
   - Logo files `/logo.png`, `/logo-light.svg`. Colours and tokens in globals.css.
   - "Kitchenware" positioning: layout.tsx:35 description, Footer.tsx:34 tagline, feed.ts:380, shipping/page.tsx:226.
   - Policy pages give a street address (Arshinagar, Bosila, Mohammadpur): contact, privacy, returns, shipping `page.tsx`.
