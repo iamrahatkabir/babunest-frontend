@@ -94,7 +94,7 @@ export function ProductCard({ product, priority = false }: { product: Product; p
         {soldOut || needsOptions ? (
           <Link
             aria-disabled={soldOut}
-            className={`flex h-9 items-center justify-center rounded-lg text-[11px] tracked transition-colors md:h-10 ${
+            className={`flex h-9 items-center justify-center rounded-lg text-[11px] tracked font-semibold transition-colors md:h-10 ${
               soldOut
                 ? 'pointer-events-none bg-wash text-faint'
                 : 'bg-primary text-paper hover:bg-primary-hover'

@@ -207,7 +207,8 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 - **Utilities:** `tracked` (0.08em uppercase, used on `text-[11px]` labels) and `line-clamp-2-fixed`.
 - **Recurring classes**
   - Container: `mx-auto max-w-[1280px] px-4`. Radius: `rounded-lg`.
-  - Primary button: `h-11/h-12 rounded-lg bg-primary text-[11px] tracked text-paper hover:bg-primary-hover`. The active Pagination page uses `bg-primary` too.
+  - **All buttons** use `text-[11px] tracked font-semibold`.
+  - Primary button: `h-11/h-12 rounded-lg bg-primary text-[11px] tracked font-semibold text-paper hover:bg-primary-hover`. The active Pagination page uses `bg-primary` too.
   - Secondary (outline) button: `border border-primary text-primary hover:bg-primary hover:text-paper`. Used on the order page, ProductSection view-all, Coupon Apply and ProductBuyBox Buy now.
   - The header utility strip and the footer are `bg-primary` too (footer text uses paper/80–90 so it stays legible on teal). The CheckoutSteps banner, hero fallback panel and ProductCard badge stay `bg-ink`.
   - Input: `bg-wash border-transparent focus:border-ink` (the `FIELD` const in CheckoutView).

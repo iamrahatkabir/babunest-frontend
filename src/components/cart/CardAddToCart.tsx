@@ -46,7 +46,7 @@ export function CardAddToCart({
 
   return (
     <button
-      className="h-9 w-full rounded-lg bg-primary text-[11px] tracked text-paper transition-colors hover:bg-primary-hover disabled:bg-wash disabled:text-faint md:h-10"
+      className="h-9 w-full rounded-lg bg-primary text-[11px] tracked font-semibold text-paper transition-colors hover:bg-primary-hover disabled:bg-wash disabled:text-faint md:h-10"
       disabled={isPending}
       onClick={() => add()}
       type="button"

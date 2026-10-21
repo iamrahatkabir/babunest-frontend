@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Make all button text semibold
+- **What:** Added `font-semibold` to every button's text: primary, secondary outline, card add-to-cart, pagination arrows, the hero CTA and the contact page's WhatsApp button.
+- **Why:** The brand owner asked for semibold button text.
+- **Files:** `src/app/{contact,order/[id]}/page.tsx`, `src/components/{Hero,Pagination,ProductCard,ProductSection}.tsx`, `src/components/cart/{CardAddToCart,CartView}.tsx`, `src/components/checkout/{CheckoutView,CouponField}.tsx`, `src/components/product/ProductBuyBox.tsx`, `CODEMAP.md`
+- **Status:** verified on a product page: Add to cart and Buy now compute to weight 600. `tsc` passes.
+
 ### 2026-10-21 · layout · Make secondary buttons teal outlines
 - **What:** Outline buttons now have a teal border and teal text instead of dark ones; they still fill teal with white text on hover. Covers the order page, the home-section "view all", coupon Apply and the product page's Buy now.
 - **Why:** The brand owner wants secondary buttons to match the teal quantity-stepper outline.

@@ -98,7 +98,7 @@ export function CouponField({
           value={code}
         />
         <button
-          className="flex h-11 shrink-0 items-center justify-center gap-2 rounded-lg border border-primary px-5 text-[11px] tracked text-primary transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
+          className="flex h-11 shrink-0 items-center justify-center gap-2 rounded-lg border border-primary px-5 text-[11px] tracked font-semibold text-primary transition-colors hover:border-primary hover:bg-primary hover:text-paper disabled:opacity-60"
           disabled={checking || !code.trim()}
           onClick={check}
           type="button"
