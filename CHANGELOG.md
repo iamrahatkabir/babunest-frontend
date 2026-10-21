@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Use the new BabuNest footer logo
+- **What:** Replaced `public/logo-light.svg` with the white BabuNest logo. Its viewBox is cropped from 1672×940 to the artwork (1567×392), and a 2%-opacity duplicate shape is dropped. The footer now shows it at 44–48px tall, up from 28px.
+- **Why:** New brand logo. The mark sits above the wordmark, so the old 28px height would have made the text too small to read.
+- **Files:** `public/logo-light.svg`, `src/components/Footer.tsx`, `CODEMAP.md`
+- **Status:** verified on /contact: it renders 192×48 with nothing clipped. The header logo is still the old one.
+
 ### 2026-10-21 · layout · Make the top bar and footer teal
 - **What:** The desktop top bar in the header and the footer now use `bg-primary` (#01ac9f) instead of near-black. Footer faded-white text was lifted (/50→/80, /60→/85, /80→/90) and top-bar link hovers now go to paper/70 instead of grey, so both stay readable on teal.
 - **Why:** The brand owner asked for the primary colour on the top bar and footer.

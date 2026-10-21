@@ -24,11 +24,11 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
                 default, and vector art gains nothing from rasterising anyway. */}
             <Image
               alt="BabuNest.com"
-              className="h-7 w-auto"
-              height={72}
+              className="h-11 w-auto md:h-12"
+              height={392}
               src="/logo-light.svg"
               unoptimized
-              width={393}
+              width={1567}
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/85">
               Kitchenware built to be used every day — and to last long enough to be worth it.
