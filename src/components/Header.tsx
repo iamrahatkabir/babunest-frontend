@@ -92,7 +92,7 @@ export function Header({ categories }: { categories: CategoryTree[] }) {
               className="relative flex h-10 w-10 items-center justify-center text-ink hover:text-muted"
               href="/cart"
             >
-              <CartIcon />
+              <CartIcon className="h-6 w-6" />
               <CartCount />
             </Link>
           </div>

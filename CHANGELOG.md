@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Enlarge the header cart icon and count badge to 24px
+- **What:** The header cart icon went from the 20px default to 24px (`h-6 w-6`). The count badge went from 16px to a 24px circle (`h-6 min-w-6`) with 12px semibold text, nudged out to the corner (`-right-1 -top-1`) so it doesn't cover the icon.
+- **Why:** The brand owner asked for a 24px cart icon and badge.
+- **Files:** `src/components/Header.tsx`, `src/components/CartCount.tsx`
+- **Status:** verified on /: both render 24×24 (computed), with a count of 1 showing. Not checked with a 2-digit count, where the badge grows wider via min-w.
+
 ### 2026-10-21 · search · Teal focus border on the search field
 - **What:** The header search field's active (focus) border is now `border-primary` instead of dark ink.
 - **Why:** The brand owner asked for the primary colour on its active state.
