@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · docs · Rule for keeping CURRENT-BOTTLENECK.md current
+- **What:** `CLAUDE.md` now says how to handle blockers: record them in `CURRENT-BOTTLENECK.md`, update it after every attempt, and delete it (and its pointer line) once resolved.
+- **Why:** The brand owner wants that file to always reflect the real state, never a stale or already-fixed problem.
+- **Files:** `CLAUDE.md`
+- **Status:** documentation only.
+
 ### 2026-10-21 · deps · Force npm on Railway and pin Payload plugin versions
 - **What:** `packageManager` is now `npm@10.8.2` and `@payloadcms/plugin-ecommerce` is pinned to exactly 3.88.0 (was ^3.88.0). Also pinned `payload` to 3.88.0.
 - **Why:** The first Railway build picked pnpm (from `engines.pnpm`), ignored `package-lock.json` and installed plugin-ecommerce 3.91.0 against payload 3.88.0. The build failed with "Export uploadRequiresServerValidation doesn't exist".
