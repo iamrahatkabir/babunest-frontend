@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · docs · Record that the storefront is waiting on the backend
+- **What:** Added `CURRENT-BOTTLENECK.md` (the storefront is live on Railway but empty while the backend build fails), with the steps to take once the backend is up. `CLAUDE.md` now has an Open issue line pointing to it.
+- **Why:** Keeps both repos' blocker files in step, so this repo's state doesn't look healthy when it isn't.
+- **Files:** `CURRENT-BOTTLENECK.md`, `CLAUDE.md`
+- **Status:** documentation only. Delete it once products load on the Railway URL.
+
 ### 2026-10-21 · docs · Rule for keeping CURRENT-BOTTLENECK.md current
 - **What:** `CLAUDE.md` now says how to handle blockers: record them in `CURRENT-BOTTLENECK.md`, update it after every attempt, and delete it (and its pointer line) once resolved.
 - **Why:** The brand owner wants that file to always reflect the real state, never a stale or already-fixed problem.
