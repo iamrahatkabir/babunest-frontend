@@ -14,7 +14,7 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="mt-auto bg-ink text-paper">
+    <footer className="mt-auto bg-primary text-paper">
       <div className="mx-auto max-w-[1280px] px-4 py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-4 md:gap-8">
           <div className="md:col-span-1">
@@ -30,18 +30,18 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
               unoptimized
               width={393}
             />
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/60">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/85">
               Kitchenware built to be used every day — and to last long enough to be worth it.
             </p>
           </div>
 
           <div>
-            <h2 className="text-[11px] tracked text-paper/50">Shop</h2>
+            <h2 className="text-[11px] tracked text-paper/80">Shop</h2>
             <ul className="mt-4 space-y-2.5">
               {categories.map((category) => (
                 <li key={category.id}>
                   <Link
-                    className="text-sm text-paper/80 hover:text-paper"
+                    className="text-sm text-paper/90 hover:text-paper"
                     href={`/category/${category.slug}`}
                   >
                     {category.title}
@@ -52,7 +52,7 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
           </div>
 
           <div>
-            <h2 className="text-[11px] tracked text-paper/50">Help</h2>
+            <h2 className="text-[11px] tracked text-paper/80">Help</h2>
             <ul className="mt-4 space-y-2.5">
               {[
                 { href: '/shipping', label: 'Shipping & delivery' },
@@ -61,7 +61,7 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
                 { href: '/privacy', label: 'Privacy policy' },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link className="text-sm text-paper/80 hover:text-paper" href={link.href}>
+                  <Link className="text-sm text-paper/90 hover:text-paper" href={link.href}>
                     {link.label}
                   </Link>
                 </li>
@@ -70,8 +70,8 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
           </div>
 
           <div>
-            <h2 className="text-[11px] tracked text-paper/50">Get in touch</h2>
-            <ul className="mt-4 space-y-2.5 text-sm text-paper/80">
+            <h2 className="text-[11px] tracked text-paper/80">Get in touch</h2>
+            <ul className="mt-4 space-y-2.5 text-sm text-paper/90">
               {/* Repeated from the top bar, which is desktop-only — on a phone
                   this is the only place these links appear. */}
               <li>
@@ -116,12 +116,12 @@ export function Footer({ categories }: { categories: CategoryTree[] }) {
                   <span>{CONTACT.instagram.label}</span>
                 </a>
               </li>
-              <li className="pt-2 text-paper/60">Dhaka, Bangladesh</li>
+              <li className="pt-2 text-paper/85">Dhaka, Bangladesh</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-paper/15 pt-6 text-xs text-paper/50 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-3 border-t border-paper/25 pt-6 text-xs text-paper/80 md:flex-row md:items-center md:justify-between">
           <p>© {year} BabuNest.com. All rights reserved.</p>
           <p>Cash on delivery available across Bangladesh.</p>
         </div>

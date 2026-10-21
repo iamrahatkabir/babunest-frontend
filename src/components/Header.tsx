@@ -26,12 +26,12 @@ export function Header({ categories }: { categories: CategoryTree[] }) {
   return (
     <header className="sticky top-0 z-50 bg-paper">
       {/* Utility strip — desktop only. */}
-      <div className="hidden bg-ink text-paper md:block">
+      <div className="hidden bg-primary text-paper md:block">
         <div className="mx-auto flex h-9 max-w-[1280px] items-center justify-between px-4 text-[11px]">
           <div className="flex items-center gap-6">
             {/* Icon and number are one link, so clicking either opens WhatsApp. */}
             <a
-              className="flex items-center gap-2 hover:text-faint"
+              className="flex items-center gap-2 hover:text-paper/70"
               href={CONTACT.whatsapp.url}
               rel="noopener noreferrer"
               target="_blank"
@@ -42,7 +42,7 @@ export function Header({ categories }: { categories: CategoryTree[] }) {
             </a>
 
             <a
-              className="flex items-center gap-2 hover:text-faint"
+              className="flex items-center gap-2 hover:text-paper/70"
               href={CONTACT.facebook.url}
               rel="noopener noreferrer"
               target="_blank"
@@ -54,7 +54,7 @@ export function Header({ categories }: { categories: CategoryTree[] }) {
           </div>
           {/* `tel:` opens the dialer on a phone. On desktop it hands off to
               whatever the OS has registered, or does nothing — harmless. */}
-          <a className="flex items-center gap-1.5 hover:text-faint" href={CONTACT.hotline.url}>
+          <a className="flex items-center gap-1.5 hover:text-paper/70" href={CONTACT.hotline.url}>
             <span className="tracked">Hotline:</span>
             <span>{CONTACT.hotline.display}</span>
           </a>

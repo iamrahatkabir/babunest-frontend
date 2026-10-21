@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Make the top bar and footer teal
+- **What:** The desktop top bar in the header and the footer now use `bg-primary` (#01ac9f) instead of near-black. Footer faded-white text was lifted (/50→/80, /60→/85, /80→/90) and top-bar link hovers now go to paper/70 instead of grey, so both stay readable on teal.
+- **Why:** The brand owner asked for the primary colour on the top bar and footer.
+- **Files:** `src/components/Header.tsx`, `src/components/Footer.tsx`, `CODEMAP.md`
+- **Status:** verified with computed styles: both are rgb(1,172,159). `tsc` passes. Not visually reviewed in a screenshot, because the preview pane would not render the footer.
+
 ### 2026-10-21 · layout · Make teal #01AC9F the button colour
 - **What:** Added `primary` (#01ac9f) and `primary-hover` (#01968b) tokens. Every primary button and the active pagination page now use a teal fill with white text, and outline buttons fill teal on hover. Titles, text and the dark header, footer and banners are unchanged.
 - **Why:** #01AC9F is BabuNest's primary brand colour, for buttons only.
