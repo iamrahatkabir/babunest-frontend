@@ -5,6 +5,12 @@ Newest first. Rules and entry format are in `CLAUDE.md`. Entries before
 
 <!-- entries -->
 
+### 2026-10-21 · layout · Use the new BabuNest main logo in the header
+- **What:** The header now shows `public/logo.svg`, the yellow-and-teal BabuNest logo, cropped to the same 1567×392 box as the footer logo with its 2%-opacity stray shape dropped. It renders at 40px tall on mobile and 48px on desktop, up from 20–24px. The old `public/logo.png` is deleted.
+- **Why:** New brand logo. The mark above the wordmark needs more height for the name to stay readable.
+- **Files:** `public/logo.svg` (new), `public/logo.png` (deleted), `src/components/Header.tsx`, `CODEMAP.md`
+- **Status:** verified on / at desktop (192×48) and 375px mobile, nothing clipped. Favicon and apple-icon are still Brownmoor's.
+
 ### 2026-10-21 · product · Teal selected state for variant options
 - **What:** The selected variant option on the product page now has a teal border on a light-teal background (`primary-wash` #e6f7f5, a new token) instead of a dark border on grey. Unselected options hover to a teal border.
 - **Why:** The brand owner asked for the primary colour on selected states.

@@ -67,15 +67,16 @@ export function Header({ categories }: { categories: CategoryTree[] }) {
           <MobileNav categories={categories} />
 
           <Link className="shrink-0" href="/">
-            {/* Intrinsic 395×72, rendered at 20–24px tall — roughly 3× the
-                display size, so it stays sharp on high-density screens. */}
+            {/* SVG, so it is sharp at any size. The mark sits above the
+                wordmark, so it needs 40–48px of height for the name to read. */}
             <Image
               alt="BabuNest.com"
-              className="h-5 w-auto md:h-6"
-              height={72}
+              className="h-10 w-auto md:h-12"
+              height={392}
               priority
-              src="/logo.png"
-              width={395}
+              src="/logo.svg"
+              unoptimized
+              width={1567}
             />
           </Link>
 

@@ -56,7 +56,7 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
 
 ## Components
 **Layout**
-- `Header` (server): sticky. Utility strip (WhatsApp, FB, hotline) / logo + SearchBar + MobileSearch + cart icon with CartCount / CategoryNav.
+- `Header` (server): sticky. Utility strip (WhatsApp, FB, hotline) / logo (`/logo.svg`) + SearchBar + MobileSearch + cart icon with CartCount / CategoryNav.
 - `Footer` (server): category column, help links, contacts, ©.
 - `CategoryNav` (server): desktop menu; dropdowns open on `group-hover` / `focus-within`.
 - `MobileNav` (client): drawer; locks body scroll; Esc closes.
@@ -253,7 +253,9 @@ All are server components. No route uses `revalidate`/`dynamic` segment config; 
   - MobileNav.tsx:13 says it is the only client component in the header; SearchBar, MobileSearch and CartCount are client components too.
 - **Brand:** site name is `BabuNest.com` everywhere (titles, policy pages, footer ©, logo alt, Hero alt fallbacks, feed). Facebook: `facebook.com/babunestbangladesh` (lib/contact.ts). Still left from Brownmoor:
   - `lib/contact.ts`: phone 8801621193887 (WhatsApp and hotline share it), email `hellobrownmoor@gmail.com`. Instagram is `@babunest`.
-  - Header logo `/logo.png` (395×72) is still Brownmoor's. The footer logo `/logo-light.svg` is BabuNest's: white, viewBox cropped to 1567×392, shown at h-11/md:h-12 in Footer.tsx.
+  - Logos are BabuNest's, both SVG with the viewBox cropped to 1567×392, rendered through next/image with `unoptimized`.
+    - Header: `/logo.svg` (yellow #FDBB01 + teal), h-10/md:h-12.
+    - Footer: `/logo-light.svg` (white), h-11/md:h-12.
   - "Kitchenware" positioning: layout.tsx:35 description, Footer.tsx:34 tagline, feed.ts:380, shipping/page.tsx:226.
   - Policy pages give a street address (Arshinagar, Bosila, Mohammadpur): contact, privacy, returns, shipping `page.tsx`.
   - localStorage keys `brownmoor-*` (above): internal only, never shown.
